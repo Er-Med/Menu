@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,14 +13,14 @@
       box-sizing: border-box;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-    
+
     body {
       background-color: #1a1a1a;
       color: #fff;
       padding: 0;
       margin: 0;
     }
-    
+
     .container {
       max-width: 1000px;
       margin: 0 auto;
@@ -29,7 +30,7 @@
       border-left: 1px solid #333;
       border-right: 1px solid #333;
     }
-    
+
     /* Header styles */
     .header {
       display: flex;
@@ -38,7 +39,7 @@
       margin-bottom: 2.5rem;
       text-align: center;
     }
-    
+
     .logo-container {
       width: 180px;
       height: 180px;
@@ -47,12 +48,12 @@
       justify-content: center;
       margin-bottom: 1rem;
     }
-    
+
     .logo {
       width: 100%;
       height: auto;
     }
-    
+
     .restaurant-name {
       font-size: 1rem;
       font-weight: bold;
@@ -61,7 +62,7 @@
       letter-spacing: 1px;
       margin-bottom: 0.5rem;
     }
-    
+
     .title {
       font-size: 3.5rem;
       font-weight: bold;
@@ -72,19 +73,19 @@
       font-family: 'Impact', sans-serif;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
-    
+
     .subtitle {
       font-size: 1rem;
       color: #f5c945;
       font-style: italic;
       margin-bottom: 1rem;
     }
-    
+
     /* Menu section */
     .menu-section {
       margin-bottom: 2.5rem;
     }
-    
+
     .section-title {
       font-size: 1.75rem;
       font-weight: bold;
@@ -95,19 +96,19 @@
       border-bottom: 1px solid #444;
       padding-bottom: 0.5rem;
     }
-    
+
     .menu-grid {
       display: grid;
       grid-template-columns: 1fr;
       gap: 1.5rem;
     }
-    
+
     @media (min-width: 768px) {
       .menu-grid {
         grid-template-columns: 1fr 1fr;
       }
     }
-    
+
     /* Menu item */
     .menu-item {
       margin-bottom: 1rem;
@@ -117,22 +118,22 @@
       padding: 0.5rem 0;
       border-bottom: 1px dotted #444;
     }
-    
+
     .menu-item:last-child {
       border-bottom: none;
     }
-    
+
     .item-name {
       font-weight: 600;
       color: #fff;
       font-size: 1.1rem;
     }
-    
+
     .item-price {
       color: #f5c945;
       font-weight: bold;
     }
-    
+
     /* Images */
     .menu-image {
       width: 100%;
@@ -142,7 +143,7 @@
       border: 1px solid #444;
       border-radius: 4px;
     }
-    
+
     /* Footer */
     .footer {
       text-align: center;
@@ -150,7 +151,7 @@
       padding-top: 1rem;
       border-top: 1px solid #444;
     }
-    
+
     .website {
       color: #f5c945;
       font-weight: bold;
@@ -158,14 +159,14 @@
       letter-spacing: 1px;
       font-size: 1rem;
     }
-    
+
     /* Two column layout for some sections */
     .two-columns {
       display: grid;
       grid-template-columns: 1fr;
       gap: 2rem;
     }
-    
+
     @media (min-width: 768px) {
       .two-columns {
         grid-template-columns: 1fr 1fr;
@@ -173,13 +174,16 @@
     }
   </style>
 </head>
+
 <body>
   <div class="container">
     <!-- Header -->
     <header class="header">
       <div class="restaurant-name">Pizza Restaurant</div>
       <div class="logo-container">
-        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/snapedit_1746467052540-kmSlal2B16PANGGgRYd6Kj4igtLJto.png" alt="Pizza Nooon Logo" class="logo">
+        <img
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/snapedit_1746467052540-kmSlal2B16PANGGgRYd6Kj4igtLJto.png"
+          alt="Pizza Nooon Logo" class="logo">
       </div>
       <h1 class="title">MENU</h1>
       <p class="subtitle">AU FEU DU BOIS</p>
@@ -192,177 +196,178 @@
         <!-- Sandwiches Section -->
         <div class="menu-section">
           <h2 class="section-title">Sandwiches</h2>
-          
+
           <div class="menu-item">
             <span class="item-name">طون | Thon</span>
             <span class="item-price">12 DH / 13 DH</span>
           </div>
-          
+
           <div class="menu-item">
             <span class="item-name">أومليط | Omelette</span>
             <span class="item-price">12 DH / 13 DH</span>
           </div>
-          
+
           <div class="menu-item">
             <span class="item-name">كفتة | Kefta</span>
             <span class="item-price">15 DH / 16 DH</span>
           </div>
-          
+
           <div class="menu-item">
             <span class="item-name">دجاج | Poulet</span>
             <span class="item-price">15 DH / 16 DH</span>
           </div>
-          
+
           <div class="menu-item">
             <span class="item-name">تشيكن | Chicken</span>
             <span class="item-price">20 DH / 22 DH</span>
           </div>
-          
+
           <div class="menu-item">
             <span class="item-name">كوردون بلو | Cordon Bleu</span>
             <span class="item-price">20 DH / 22 DH</span>
           </div>
         </div>
-        
-        <img src="https://images.unsplash.com/photo-1550507992-eb63ffee0847?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Sandwich Image" class="menu-image">
-        
+
+        <!-- <img src="https://images.unsplash.com/photo-1550507992-eb63ffee0847?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Sandwich Image" class="menu-image"> -->
+
         <!-- Calzone Section -->
         <div class="menu-section">
           <h2 class="section-title">Calzone</h2>
-          
+
           <div class="menu-item">
             <span class="item-name">دجاج | Poulet</span>
             <span class="item-price">20 DH / 23 DH</span>
           </div>
-          
+
           <div class="menu-item">
             <span class="item-name">كفتة | Kefta</span>
             <span class="item-price">20 DH / 23 DH</span>
           </div>
-          
+
           <div class="menu-item">
             <span class="item-name">طون | Thon</span>
             <span class="item-price">20 DH / 23 DH</span>
           </div>
-          
+
           <div class="menu-item">
             <span class="item-name">دانذ فيشي | Dinde Fromage</span>
             <span class="item-price">20 DH / 23 DH</span>
           </div>
-          
+
           <div class="menu-item">
             <span class="item-name">ميكس | Mix</span>
             <span class="item-price">23 DH / 25 DH</span>
           </div>
         </div>
-        
-        <img src="https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Calzone Image" class="menu-image">
+
+        <!-- <img src="https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Calzone Image" class="menu-image"> -->
       </div>
-      
+
       <!-- Right Column -->
       <div>
         <!-- Pizza Section -->
         <div class="menu-section">
           <h2 class="section-title">Pizza</h2>
-          
+
           <div class="menu-item">
             <span class="item-name">مارجريطا | Margherita</span>
             <span class="item-price">18 DH / 30 DH</span>
           </div>
-          
+
           <div class="menu-item">
             <span class="item-name">طون | Thon</span>
             <span class="item-price">24 DH / 33 DH</span>
           </div>
-          
+
           <div class="menu-item">
             <span class="item-name">دجاج | Poulet</span>
             <span class="item-price">25 DH / 35 DH</span>
           </div>
-          
+
           <div class="menu-item">
             <span class="item-name">خضر | Légumes</span>
             <span class="item-price">23 DH / 33 DH</span>
           </div>
-          
+
           <div class="menu-item">
             <span class="item-name">4 فرومج | 4 Fromages</span>
             <span class="item-price">25 DH / 35 DH</span>
           </div>
-          
+
           <div class="menu-item">
             <span class="item-name">بيبروني | Pepperoni</span>
             <span class="item-price">25 DH / 35 DH</span>
           </div>
         </div>
-        
-        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Pizza Image" class="menu-image">
-        
+
+        <!-- <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Pizza Image" class="menu-image"> -->
+
         <!-- Tacos Section -->
         <div class="menu-section">
           <h2 class="section-title">Tacos</h2>
-          
+
           <div class="menu-item">
             <span class="item-name">دجاج | Poulet</span>
             <span class="item-price">23 DH / 30 DH</span>
           </div>
-          
+
           <div class="menu-item">
             <span class="item-name">كفتة | Kefta</span>
             <span class="item-price">25 DH / 30 DH</span>
           </div>
-          
+
           <div class="menu-item">
             <span class="item-name">نوكيط | Nuggets</span>
             <span class="item-price">25 DH / 30 DH</span>
           </div>
-          
+
           <div class="menu-item">
             <span class="item-name">ميكست | Mixte</span>
             <span class="item-price">30 DH / 35 DH</span>
           </div>
-          
+
           <div class="menu-item">
             <span class="item-name">كوردون بلو | Cordon Bleu</span>
             <span class="item-price">30 DH / 35 DH</span>
           </div>
         </div>
-        
-        <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Tacos Image" class="menu-image">
-        
+
+        <!-- <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Tacos Image" class="menu-image"> -->
+
         <!-- Pasta Section -->
         <div class="menu-section">
           <h2 class="section-title">Pasticcio</h2>
-          
+
           <div class="menu-item">
             <span class="item-name">دجاج | Poulet</span>
             <span class="item-price">25 DH / 26 DH</span>
           </div>
-          
+
           <div class="menu-item">
             <span class="item-name">دانذ فيشي | Dinde Fromage</span>
             <span class="item-price">25 DH / 26 DH</span>
           </div>
-          
+
           <div class="menu-item">
             <span class="item-name">كفتة | Kefta</span>
             <span class="item-price">25 DH / 26 DH</span>
           </div>
-          
+
           <div class="menu-item">
             <span class="item-name">ميكس | Mix</span>
             <span class="item-price">28 DH / 29 DH</span>
           </div>
         </div>
-        
-        <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Pasta Image" class="menu-image">
+
+        <!-- <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Pasta Image" class="menu-image"> -->
       </div>
     </div>
-    
+
     <!-- Footer -->
     <footer class="footer">
       <p class="website">www.pizzanooon.com</p>
     </footer>
   </div>
 </body>
+
 </html>
